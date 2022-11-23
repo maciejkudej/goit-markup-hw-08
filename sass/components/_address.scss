@@ -1,0 +1,20 @@
+.address {
+  font-style: normal;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  color: var(--font-contact-footer);
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.25s var(--cubic-bazier);
+  &:hover,
+  &:focus {
+  color: var(--brand-blue);
+}
+}
+
+

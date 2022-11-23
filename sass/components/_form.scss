@@ -1,0 +1,131 @@
+.form {
+  display: flex;
+  display: block;
+  padding-top: 10px;
+  margin-left: 40px;
+  width: 528px;
+}
+
+.form__fieldset {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 448px;
+  border-style: solid;
+  border-radius: 4px;
+  margin-block: 30px;
+  transition: fill 0.25s var(--cubic-bazier),
+    border-color 0.25s var(--cubic-bazier);
+}
+
+.form__fieldset:focus-within {
+  border-color: var(--brand-blue);
+  fill: var(--brand-blue);
+}
+
+.form__label {
+  position: absolute;
+  top: -22px;
+  font-size: 12px;
+  color: var(--font-normal);
+}
+
+.form__icon {
+  margin-left: 12px;
+}
+
+.form__input {
+  border: 0;
+  background-color: transparent;
+  padding: 12px;
+  width: 100%;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.form__textarea {
+  border: 0;
+  padding: 12px 16px;
+  resize: none;
+  width: 100%;
+  color: var(--font-normal-modal);
+  &:focus {
+    outline: 0;
+  }
+}
+
+.form__footer {
+  display: flex;
+  flex-direction: column;
+  width: 448px;
+}
+
+.form__legal-checkbox {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.form__legal-checkbox-input--hidden {
+  position: absolute;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.form__politic {
+  margin-bottom: 3px;
+  margin-left: 45px;
+}
+
+.form__checkmark {
+  position: absolute;
+  width: 20px;
+  height: 19px;
+  box-shadow: 0px 0px 0px 2px var(--font-dark) inset;
+  border-radius: 2px;
+  left: 15px;
+  top: 0px;
+}
+
+.form__checkmark:after {
+  content: "";
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 34 32' width='34' height='32' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill='%232196f3' d='M4.267 0h25.6c2.356 0 4.267 1.91 4.267 4.267v23.467c0 2.356-1.91 4.267-4.267 4.267h-25.6c-2.356 0-4.267-1.91-4.267-4.267v-23.467c0-2.356 1.91-4.267 4.267-4.267z'/%3e%3cpath fill='%23fff' d='M8.442 16.537l-0.147-0.14-2.205 2.088 7.767 7.41 16.318-15.567-2.19-2.089-14.128 13.465-5.416-5.167z'/%3e%3c/svg%3e");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.25s var(--cubic-bazier);
+}
+
+.form__legal-checkbox input:checked ~ .form__checkmark:after {
+  opacity: 1;
+}
+
+.form__legal-checkbox input:checked ~ .form__checkmark {
+  border-color: var(--background-white);
+  box-shadow: none;
+}
+
+.form__button-send {
+  width: 200px;
+  background-color: var(--brand-blue);
+  color: var(--font-light);
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  cursor: pointer;
+  font-family: inherit;
+  display: block;
+  padding: 11px 41px;
+  border: none;
+  border-radius: 4px;
+}

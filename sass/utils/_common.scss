@@ -1,0 +1,42 @@
+.logo--indent {
+  margin-right: 93px;
+}
+
+.logo--block {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  color: var(--font-black);
+  text-decoration: none;
+}
+
+.header--hidden {
+  display: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.section--grey {
+  background-color: var(--background-grey);
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+}

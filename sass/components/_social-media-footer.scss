@@ -1,0 +1,34 @@
+.social-media {
+  padding: 12px 0 0 70px;
+}
+
+.social-media__header {
+  color: var(--font-light);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  padding-bottom: 20px;
+}
+
+.social-media__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+.social-media__link {
+  color: var(--sm-icon-color-footer);
+  transition: color 0.25s var(--cubic-bazier);
+  &:hover,
+  &:focus {
+    color: var(--brand-blue);
+    --color1: var(--brand-blue);
+    --color2: var(--font-light);
+  }
+}
+
+.social-media__icon {
+  --color1: currentColor;
+}

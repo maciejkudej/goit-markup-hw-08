@@ -1,0 +1,37 @@
+.contact-list {
+  display: flex;
+}
+
+.contact-list__item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.contact-list__link {
+  color: var(--font-normal);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.25s var(--cubic-bazier);
+  &:hover,
+  &:focus {
+    color: var(--brand-blue);
+    --color1: var(--brand-blue);
+    --color2: var(--brand-blue);
+    --color5: var(--brand-blue);
+  }
+}
+
+.contact-list__icon {
+  position: relative;
+  margin-right: 10px;
+  --color1: currentColor;
+  --color2: currentColor;
+  --color5: currentColor;
+}
+
+.contact-list__icon--lower1 {
+  bottom: -1px;
+}
+
+.contact-list__icon--lower3 {
+  bottom: -3px;
+}

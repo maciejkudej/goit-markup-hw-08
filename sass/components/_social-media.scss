@@ -1,0 +1,22 @@
+.social-media-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+.social-media-list__item {
+  color: var(--font-light);
+  transition: color 0.25s var(--cubic-bazier);
+  &:hover,
+  &:focus {
+    color: var(--brand-blue);
+    --color1: var(--brand-blue);
+    --color2: var(--font-light);
+  }
+}
+
+.social-media-list__icon {
+  --color1: currentColor;
+}

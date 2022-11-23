@@ -1,0 +1,36 @@
+.presentation {
+}
+
+.presentation__header {
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--font-dark);
+  text-align: center;
+}
+
+.presentation__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.product {
+}
+
+.product__photo {
+  position: relative;
+}
+
+.product__label {
+  position: absolute;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+  padding-top: 27px;
+  color: var(--font-light);
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  background-color: var(--background-dark-eighty);
+}
