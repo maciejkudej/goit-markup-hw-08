@@ -1,0 +1,122 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    fill: var(--brand-blue);
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: var(--background-white);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 0.25s var(--cubic-bazier);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 40px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: var(--font-dark);
+  z-index: 998;
+}
+
+.mobile-menu__link-nav {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+  // color: var(--logo-header);
+  text-decoration: none;
+}
+.mobile-menu__link-nav-accent {
+  color: var(--brand-blue);
+}
+.mobile-menu__item-nav:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-menu__list-nav {
+  margin-bottom: auto;
+}
+
+.mobile-menu__link-contact-tel {
+  margin-bottom: 32px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  color: var(--brand-blue);
+}
+.mobile-menu__list-contact-tel {
+  margin-bottom: 32px;
+}
+.mobile-menu__link-contact-mailto {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--font-normal);
+}
+.mobile-menu__list-contact-mailto {
+  margin-bottom: 64px;
+}
+.mobile-menu__list-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.mobile-menu__link-social {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--brand-blue);
+}
+.mobile-menu__item-social:not(:last-child) .mobile-menu__link-social {
+  display: flex;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}

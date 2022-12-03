@@ -1,5 +1,27 @@
 .contact-list {
-  display: flex;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-list__item {
+  margin-left: 50px;
+}
+}
+
+@media (min-width: 1200px) {
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-list__item:not(:first-child) {
+  margin-left: 50px;
+}
 }
 
 .contact-list__item:not(:first-child) {
