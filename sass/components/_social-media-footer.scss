@@ -1,5 +1,5 @@
 .social-media {
-  padding: 12px 0 0 70px;
+  padding-top: 60px;
 }
 
 .social-media__header {
@@ -8,6 +8,7 @@
   font-weight: 700;
   line-height: 1.17;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .social-media__list {
@@ -31,4 +32,18 @@
 
 .social-media__icon {
   --color1: currentColor;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-media {
+    padding-top: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-media__header {
+    text-align: left;
+  }
+  .social-media {
+    padding: 12px 12px 12px 70px;
+  }
 }
