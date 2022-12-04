@@ -26,6 +26,13 @@
   background-color: var(--background-white);
 }
 
+.team-member-card__img {
+  width: 100%;
+  height: auto;
+  object-fit:cover;
+
+}
+
 .team-member-card__name {
   font-size: 16px;
   font-weight: 500;
@@ -59,7 +66,7 @@
   }
   .team-member-card {
     max-width: 354px;
-     margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -68,5 +75,9 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 50px;
+  }
+
+  .team-member-card__img {
+    width: 270px;
   }
 }
