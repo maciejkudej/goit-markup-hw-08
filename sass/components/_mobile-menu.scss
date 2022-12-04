@@ -11,11 +11,18 @@
   border: none;
   border-radius: 50%;
   outline: none;
+  color: var(--font-dark);
+  transition: color 0.25s var(--cubic-bazier);
 
   &:hover,
   &:focus {
-    fill: var(--brand-blue);
+    color: var(--brand-blue);
+    --color1: var(--brand-blue);
   }
+}
+
+.menu-toggle__icon {
+  --color1: currentColor;
 }
 
 @media (min-width: 768px) {
