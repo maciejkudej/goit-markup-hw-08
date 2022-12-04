@@ -1,4 +1,5 @@
 .slider {
+  height: 400px;
   background: linear-gradient(
       var(--backgroung-dark-transparent),
       var(--backgroung-dark-transparent)
@@ -6,7 +7,7 @@
     url("./../images/mobile_header.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 50%, 50% 50%;
-  background-size: 480px 400px, auto;
+  background-size: auto 400px, cover;
   color: var(--font-light);
 }
 
@@ -51,6 +52,21 @@
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .slider {
+    background: linear-gradient(
+        var(--backgroung-dark-transparent),
+        var(--backgroung-dark-transparent)
+      ),
+      url("./../images/mobile_header@2x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 50%, 50% 50%;
+    background-size: auto 400px, cover;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .slider {
     background: linear-gradient(
@@ -60,13 +76,28 @@
       url("./../images/tablet_header.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 50% 50%, 50% 50%;
-    background-size: 768px 400px, auto;
-    color: var(--font-light);
+    background-size: auto 400px, cover;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .slider {
+      background: linear-gradient(
+          var(--backgroung-dark-transparent),
+          var(--backgroung-dark-transparent)
+        ),
+        url("./../images/tablet_header@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 50% 50%, 50% 50%;
+      background-size: auto 400px, cover;
+    }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .slider {
+    height: 600px;
     background: linear-gradient(
         var(--backgroung-dark-transparent),
         var(--backgroung-dark-transparent)
@@ -74,17 +105,32 @@
       url("./../images/header_desktop.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 50% 50%, 50% 50%;
-    background-size: 1600px 600px, auto;
-    color: var(--font-light);
+    background-size: auto 600px, cover;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .slider {
+      height: 600px;
+      background: linear-gradient(
+          var(--backgroung-dark-transparent),
+          var(--backgroung-dark-transparent)
+        ),
+        url("./../images/header_desktop@2x.jpg");
+      background-repeat: no-repeat, no-repeat;
+      background-position: 50% 50%, 50% 50%;
+      background-size: auto 600px, cover;
+    }
   }
 
   .slider__title {
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  max-width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 106px 0 30px 0;
-}
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 106px 0 30px 0;
+  }
 }

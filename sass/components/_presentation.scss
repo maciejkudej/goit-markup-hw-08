@@ -2,8 +2,15 @@
   display: none;
 }
 
+.presentation__section {
+  display: none;
+}
+
 @media screen and (min-width: 1200px) {
   .presentation {
+    display: block;
+  }
+  .presentation__section {
     display: block;
   }
 }
