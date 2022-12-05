@@ -34,3 +34,22 @@
   display: inline-block;
   fill: currentColor;
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--background-white);
+}
+  }
+
+
+}
