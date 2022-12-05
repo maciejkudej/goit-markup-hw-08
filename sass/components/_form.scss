@@ -2,7 +2,7 @@
   display: flex;
   display: block;
   padding-top: 10px;
-  margin-left: 0px;
+  margin-left: 40px;
   max-width: 370px;
 }
 
@@ -167,8 +167,11 @@
   }
 
   .form__politic {
-    font-size: 14px;
-    margin-bottom: 3px;
-    margin-left: 45px;
-  }
+  font-size: 14px;
+  margin-bottom: 3px;
+  margin-left: 45px;
+}
+.form__checkmark{
+  left: 15px;
+}
 }
